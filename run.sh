@@ -33,7 +33,7 @@ adduser --uid $WEECHAT_UID --gid $WEECHAT_GID $WEECHAT_USER --home $WEECHAT_HOME
 if [[ $IRC_SERVER == "localhost" ]]; then
     mkdir -p $WEECHAT_HOME/bitlbee
     chmod 700 $WEECHAT_HOME/bitlbee
-    chown -R ${WEECHAT_USER}.${WEECHAT_USER} $WEECHAT_HOME/bitlbee
+    chown -R ${WEECHAT_USER}:${WEECHAT_USER} $WEECHAT_HOME/bitlbee
 fi
 
 chown ${WEECHAT_USER}.${WEECHAT_USER} $WEECHAT_HOME
